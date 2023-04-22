@@ -23,14 +23,12 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr  >
+                          <tr  *ngFor="let i of data" >
                             
                             
-                           
-                           
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{i.employeeCode}}</td>
+                            <td>{{i.employeeName}}</td>
+                            <td>{{i.designation}}</td>
                            
                            
                            

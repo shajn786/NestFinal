@@ -7,6 +7,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -34,7 +36,8 @@ const myRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
